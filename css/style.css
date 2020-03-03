@@ -1,3 +1,8 @@
+body{
+    /* Just so I can scroll down a little bit in a demo */
+    margin-bottom: 300px;
+}
+
 .red{
     background-color: #e74c3c;
 }
@@ -76,4 +81,45 @@
 .example{
     border: 5px solid #16a085;
     margin-bottom: 20px;
+}
+
+
+.clear{
+    clear: both;
+}
+
+
+nav{
+    margin-top: 50px;
+    background-color: #34495e;
+}
+
+nav::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.logo{
+    float: left;
+}
+
+.list{
+    float: right
+}
+
+.list ul{
+    color: white;
+    list-style: none;
+}
+
+.list ul::after{
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.list ul li{
+    float: left;
+    padding: 0 20px;
 }
